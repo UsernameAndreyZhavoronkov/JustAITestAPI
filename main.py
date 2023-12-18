@@ -19,7 +19,7 @@ async def redirect_to_https(request: Request, call_next):
 
 @app.get("/")
 def get_hello():
-    return {"message": "New mecvvv *11#*  "}
+    return {"message": "New mecvvv *bb11#*  "}
 
 
 def send_get_request(api_url):
