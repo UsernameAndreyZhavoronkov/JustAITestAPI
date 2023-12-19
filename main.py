@@ -42,7 +42,7 @@ def send_get_request(api_url):
 
 if __name__ == '__main__':
     # Пример URL для GET-запроса
-    # url = 'https://bot.jaicp.com/chatapi/pTkdWLRY:c0b87539a53a1ec0334bac00041bb7881d76518e?clientId=test&query=/start'
+    # url = 'https://'
 
     # Вызов функции для отправки GET-запроса и вывода ответа
     # send_get_request(url)
