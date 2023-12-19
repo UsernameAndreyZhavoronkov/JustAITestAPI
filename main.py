@@ -19,7 +19,7 @@ async def redirect_to_https(request: Request, call_next):
 
 @app.get("/")
 def get_hello():
-    return {"message": "Run script from git"}
+    return {"message": "Run script  * from git"}
 
 
 def send_get_request(api_url):
