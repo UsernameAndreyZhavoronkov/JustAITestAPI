@@ -21,7 +21,8 @@ async def redirect_to_https(request: Request, call_next):
 def get_hello():
     return {
         "form": "main",
-        "color": "grey"
+        "color": "grey",
+        "props_second": []
     }
 
 
