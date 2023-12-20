@@ -47,3 +47,31 @@ if __name__ == '__main__':
     # Вызов функции для отправки GET-запроса и вывода ответа
     # send_get_request(url)
     uvicorn.run(app, host="0.0.0.0", port=8000)  # , ssl_keyfile="key.pem", ssl_certfile="cert.pem")
+
+"""
+default_log = sys.stderr
+sys.stderr = open('log.log', 'w')
+flags = {
+    "flag_not_read_log": True
+}
+
+def read_log():
+    if flags["flag_not_read_log"]:
+        with open('log.log', 'r') as f_log:
+            lines_log = f_log.readlines()
+        this_process_id = None
+        for line in lines_log:
+            this_process_id = line.split("server process [")[1] if len(line.split("server process [")) > 1 else None
+            if this_process_id:
+                this_process_id = this_process_id.split("]")[0]
+            break
+        print(this_process_id)
+        flags["flag_not_read_log"] = False
+
+if __name__ == '__main__':
+    print("start")
+    try:
+        uvicorn.run(app, host="0.0.0.0", port=8000)
+    finally:
+        sys.stderr.close()
+"""
