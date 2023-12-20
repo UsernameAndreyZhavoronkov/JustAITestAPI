@@ -19,7 +19,10 @@ async def redirect_to_https(request: Request, call_next):
 
 @app.get("/")
 def get_hello():
-    return {"color": "green"}
+    return {
+        "form": "main",
+        "color": "green"
+    }
 
 
 def send_get_request(api_url):
