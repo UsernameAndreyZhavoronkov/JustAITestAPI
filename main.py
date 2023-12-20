@@ -23,7 +23,7 @@ def get_hello():
         "form": "main",
         "color": "grey",
         "props_second": {
-            "state": "10"
+            "state": "101"
         }
     }
 
